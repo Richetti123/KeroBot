@@ -5,33 +5,28 @@ import fbDownloader from 'fb-downloader-scrapper'
 import { facebook } from "@xct007/frieren-scraper"
 import axios from 'axios'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!args[0]) throw `8 𝐕𝐄𝐑𝐒𝐔𝐒 8
+if (!args[0]) throw `GUERRA
 
-𝐇𝐎𝐑𝐀𝐑𝐈𝐎
-🇵🇪 𝐏𝐄𝐑𝐔 : 
-🇦🇷 𝐀𝐑𝐆𝐄𝐍𝐓𝐈𝐍𝐀 : 
-🇨🇱 𝐂𝐇𝐈𝐋𝐄 :  
-𝐂𝐎𝐋𝐎𝐑 𝐃𝐄 𝐑𝐎𝐏𝐀: 
-¬ 𝐉𝐔𝐆𝐀𝐃𝐎𝐑𝐄𝐒 𝐏𝐑𝐄𝐒𝐄𝐍𝐓𝐄𝐒
+BR ❌
+DE CLA❌
+DUELO CLAS ❌
+MODO CLAS ❌
+LOBO SOLIT ❌
+SALAS ❌
 
-      𝗘𝗦𝗖𝗨𝗔𝗗𝗥𝗔 1
+SI SE LES VE JUGANDO ESTE LOS MODOS SERAN SANCIONADOS CON UNA ❌ 
 
-👑 ┇ 
-🥷🏻 ┇  
-🥷🏻 ┇ 
-🥷🏻 ┇ 
-      
-     𝗘𝗦𝗖𝗨𝗔𝗗𝗥𝗔 2
+Mínimo a llegar 
+🥷🏻 200 puntos
+🦸🏻‍♀️160 puntos 
 
-👑 ┇ 
-🥷🏻 ┇ 
-🥷🏻 ┇ 
-🥷🏻 ┇ 
+Como se llega mejorando tus eliminaciones o matando x partida entre 6 a 7 a 8 a 9 a 10 x partida
+ 
+Hora de inicio de guerra de clanes : 
 
-ㅤʚ 𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄:
-🥷🏻 ┇ 
-🥷🏻 ┇
-` 
+🇵🇪: 6:00 pm a 8:00 pm
+🇧🇴🇨🇱: 7:00 pm a 9:00 pm
+🇦🇷🇺🇾:8:00 pm a 10:00` 
 if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`
 try {
 await m.reply(`*[❗] ᴅᴇsᴄᴀʀɢᴀɴᴅᴏ sᴜ ᴠɪᴅᴇᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ ᴘᴏʀ ғᴀᴠᴏʀ, ᴇsᴛᴇ ᴘʀᴏᴄᴇsᴏ ᴘᴜᴇᴅᴇ ᴅᴜʀᴀʀ ᴇɴᴛʀᴇ 2 ʏ 10 ᴍɪɴᴜᴛᴏs ᴅᴇᴘᴇɴᴅɪᴇɴᴅᴏ ᴅᴇ ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ...*`)      
@@ -89,10 +84,10 @@ for (const { url, isVideo } of result.reverse()) await conn.sendFile(m.chat, url
 console.log('7 ' + err7)    
 throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*`
 }}}}}}}}}
-handler.command = /^(vs8|8vs8)$/i
-handler.register = true
+handler.command = /^(guerra)$/i
+handler.register = false
 handler.group = true
-handler.admin = true
+handler.admin = false
 export default handler
 
 async function igeh(url_media) {
