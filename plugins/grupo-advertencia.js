@@ -18,16 +18,16 @@ user.warn += 1
 await m.reply(
     `${
       user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`
-    } ${lenguajeGB['smsAdveu4']()}\n\n🫵 *${text}*\n\n*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${user.warn}/4*\n${wm}`,
+    } fue sancionado con una ❌ \n\n🫵 *${text}*\n\nRecuerden no acumular 3 o serán expulsados automáticamente.\n*NUMERO DE ❌ QUE TIENE:*\n❌ *${user.warn}/3*`,
     null,
     { mentions: [who] });
 /*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} ${lenguajeGB['smsAdveu4']()}\n\n🫵 *${text}*`, `*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${user.warn}/4*\n\n${wm}`, img, [
 [lenguajeGB.smsToxic4(), '.ok'],
 [lenguajeGB.smsAdveu6(), lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[m.sender]*/
 	
-if (user.warn >= 4) {
+if (user.warn >= 3) {
 user.warn = 0
-await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
+await m.reply(`El momento ha llegado\n*@${who.split`@`[0]}* Será castigado automáticamente por un administrador del grupo. 👤`, false, { mentions: [who] })
 user.banned = true
 await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
 //await this.updateBlockStatus(m.sender, 'block') 
