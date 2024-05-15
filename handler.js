@@ -39,6 +39,7 @@ if (global.chatgpt.data === null) await global.loadChatgptDB()
 /*------------------------------------------------*/	
 try {
 m = smsg(this, m) || m
+global.mconn = m
 if (!m)
 return
 m.exp = 0
